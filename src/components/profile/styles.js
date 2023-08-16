@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 export const Container = styled.div`
   width: 85%;
@@ -11,39 +11,64 @@ export const Container = styled.div`
   margin-top: 15px;
   margin-left: 5%;
   margin-right: 5%;
-  `
+`;
 
-  export const Header = styled.h1`
-    margin-top: 15px;
-    margin-left: 5%;
-    margin-right: 5%;
-  `
-  export const Profile = styled.div`
-    width: 80%;
-    border-radius: 30px;
-    background: rgba(250, 250, 250);
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 75px;
-    margin-left: 10%;
-    margin-right: 10%;
-  `
+export const Box = styled.div`
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  // margin-bottom: 35px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 15px;
+`;
 
 export const Photo = styled.div`
   display: flex;
-  justify-content: space-around;
-  gap: 25px;
-  margin-top: 50px;
-`
+  flex-direction: row;
+  align-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap:15px;
+`;
+export const Image = styled.img`
+  width: 350px;
+  border-radius: 50%;
+  margin-top:15px;
+`;
+
 export const TextContainer = styled.div`
-display: flex;
-justify-content: flex-start;
-margin-top: 20px;
-flex-direction: column;
-padding-left: 30px;
-padding-right: 30px;
-align-items: center;
-`
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 20px;
+  flex-direction: column;
+  padding-left: 30px;
+  padding-right: 30px;
+  align-items: center;
+`;
+
+export const TextBox = styled.div`
+  width: 60%;
+  border-radius: 30px;
+  background: rgba(250, 250, 250);
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  margin-left: 10%;
+  margin-right: 10%;
+`;
+export const Header = styled.h1`
+  font-size: 24px;
+  padding-left: 30px;
+  padding-right: 30px;
+`;
+export const Text = styled.p`
+  font-size: 18px;
+  font-weight: 500;
+  padding-left: 30px;
+  padding-right: 30px;
+`;
 
 export const Button = styled.button`
   text-decoration: none;
@@ -61,10 +86,10 @@ export const Button = styled.button`
   cursor: pointer;
   user-select: none;
   appearance: none;
-  touch-action: manipulation;  
-  
-      &:before {
-    content: '';
+  touch-action: manipulation;
+
+  &:before {
+    content: "";
     position: absolute;
     left: -2px;
     top: -2px;
@@ -72,11 +97,11 @@ export const Button = styled.button`
     height: calc(100% + 4px);
     background: linear-gradient(90deg, #fd7f34, #bd155b);
     z-index: -2;
-    transition: .4s;
+    transition: 0.4s;
     border-radius: 5px;
-    }
-    &:after {
-    content: '';
+  }
+  &:after {
+    content: "";
     position: absolute;
     left: 0;
     top: 0;
@@ -84,40 +109,26 @@ export const Button = styled.button`
     height: 100%;
     background: linear-gradient(90deg, #fff, #fff);
     z-index: -1;
-    transition: .4s;
+    transition: 0.4s;
     border-radius: 4px;
-    }
-    &:hover {
+  }
+  &:hover {
     color: #fff;
-    transition: .3s;
-    }
-    &:hover:after {
+    transition: 0.3s;
+  }
+  &:hover:after {
     background: linear-gradient(90deg, #fd7f34, #bd155b);
-    }
-    &:active:after {
+  }
+  &:active:after {
     background: linear-gradient(90deg, #d96d2d, #760f3a);
-    }
-    &:focus-visible {
+  }
+  &:focus-visible {
     box-shadow: 0 0 0 3px #fd7f34;
-    }
-    &:disabled {
+  }
+  &:disabled {
     pointer-events: none;
-    }
-    .btn:disabled:before {
+  }
+  .btn:disabled:before {
     filter: grayscale(100%);
-    }
-`
-export const Image = styled.img`
-  width: 40%;
-  border-radius: 50%;
-`
-
-export const TextBox = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start; 
-`
-export const Text = styled.p`
-  font-size: 16px;
-  font-weight: 500;
-  `
+  }
+`;
