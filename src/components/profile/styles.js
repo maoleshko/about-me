@@ -69,7 +69,12 @@ export const Text = styled.p`
   padding-left: 30px;
   padding-right: 30px;
 `;
+export const TextAnswer = styled.p`
+  font-size: 18px;
+  font-weight: 500;
 
+  text-align: justify;
+`;
 export const Button = styled.button`
   text-decoration: none;
   color: #6b5770;
