@@ -30,12 +30,12 @@ export const Photo = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap:15px;
+  gap: 15px;
 `;
 export const Image = styled.img`
   width: 350px;
   border-radius: 50%;
-  margin-top:15px;
+  margin-top: 15px;
 `;
 
 export const TextContainer = styled.div`
